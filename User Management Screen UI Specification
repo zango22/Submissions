@@ -1,0 +1,49 @@
+# User Management Screen UI Specification
+
+## Introduction
+This document outlines the user interface requirements and specifications for the User Management Screen.
+
+### Purpose
+The User Management Screen is designed to allow administrators to manage user accounts within the application.
+
+## User Interface Components
+
+## Initial Screen
+Upon loading the User Management Screen, the following should be displayed:
+- The User List, which initially shows a list of all users.
+- User Info Frame, which initially is empty.
+- New User Button.
+- Hide Disabled User Checkbox.
+- Save User button.
+
+## 1. User List 
+- **Type**: Grid style table
+- **Description**: A list of user accounts with columns for user information (ID, Username, E-mail, Enabled Status).
+- **Behavior**:
+  - Users can be sorted by clicking on column headers.
+-  Can click on a user to view info in the User Info frame.
+
+## 2. Frame Window for User Info
+- **Components**:
+  - Input fields (text field) for user details (Username, Display Name, Phone, E-mail).
+  - List box for User Role (Guest, Admin, SuperAdmin)
+  - Check box (Enabled Status)
+
+### 3. New User Add Button
+- **Type**: Button
+- **Description**: Allows administrators to add a new user.
+- **Behavior**:  Clicking this button will reset the User Info frame. 
+
+### 4. Save User Button
+- **Type**: Button
+- **Description**: Allows administrators to insert a user's details.
+- **Behavior**:
+  - Enabled when all info is filled in the in the User Info frame, it can add or edit user’s details.
+
+### 5. Hide Disabled User Checkbox
+- **Type**: Checkbox
+- **Description**: Allows administrators to hide disabled users in the User List. 
+- **Behavior**:
+  -  Hides users that are disabled or are no enabled in the list.
+
+
